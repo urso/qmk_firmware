@@ -61,3 +61,11 @@
 #define MOUSEKEY_TIME_TO_MAX    64
 
 #define ENCODER_DIRECTION_FLIP
+
+// EC11K encoders have a different resolution than other EC11 encoders.
+// When using the default resolution of 4, if you notice your encoder skipping
+// every other tick, lower the resolution to 2.
+#define ENCODER_RESOLUTION 2
+
+// Allows media codes to properly register in macros and rotary encoder code
+#define TAP_CODE_DELAY 10
